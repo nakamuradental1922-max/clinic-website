@@ -299,6 +299,11 @@
       color:var(--muted);
     }
 
+    .philosophy-title{
+      white-space:nowrap;
+      font-size:clamp(1.65rem,3.1vw,2.65rem);
+    }
+
     /* Philosophy */
     .philosophy{background:#fff;}
     .cards-3{
@@ -332,7 +337,7 @@
     /* Message */
     .message-grid{
       display:grid;
-      grid-template-columns:.9fr 1.1fr;
+      grid-template-columns:1.55fr .45fr;
       gap:56px;
       align-items:center;
     }
@@ -340,12 +345,13 @@
       background:var(--primary);
       color:#fff;
       border-radius:30px;
-      padding:42px;
+      padding:36px 30px;
       box-shadow:var(--shadow);
     }
     .quote-box p{
       margin:0;
-      font-size:clamp(1.4rem,3vw,2.15rem);
+      font-size:clamp(1.08rem,1.9vw,1.62rem);
+      white-space:nowrap;
       font-weight:800;
       line-height:1.65;
     }
@@ -353,6 +359,11 @@
       display:block;
       margin-top:24px;
       opacity:.82;
+    }
+
+    .approach-title{
+      white-space:nowrap;
+      font-size:clamp(1.35rem,2.35vw,2.05rem);
     }
 
     /* Flow */
@@ -546,6 +557,7 @@
       .sports-grid{
         grid-template-columns:1fr;
       }
+      .quote-box p{white-space:normal;}
       .hero-inner{
         min-height:auto;
         padding:72px 0;
@@ -583,6 +595,8 @@
       .subnav a{font-size:.88rem;}
       section{padding:72px 0;}
       .cards-3,.flow-list,.services-grid{grid-template-columns:1fr;}
+      .philosophy-title{white-space:normal;}
+      .approach-title{white-space:normal;}
       .photo-hero{padding:16px 0 34px;}
       .photo-hero-inner{width:min(1320px, calc(100% - 24px));}
       .clinic-photo-wrap{min-height:420px;}
@@ -643,7 +657,7 @@
     <div class="container">
       <div class="section-head">
         <p class="section-kicker">Our Philosophy</p>
-        <h2 class="section-title">治すことの先にある「健康を守る」歯科医療へ</h2>
+        <h2 class="section-title philosophy-title">治すことの先にある「健康を守る」歯科医療へ</h2>
         <p class="section-text">
           目の前の症状だけを処置するのではなく、原因を考え、改善し、その状態を維持する。
           この3つを診療の中心にしています。
@@ -662,19 +676,18 @@
 
         <article class="card">
           <div class="card-number">02</div>
-          <h3>健康を維持する</h3>
+          <h3>目的に対しての処置を行う</h3>
           <p>
-            治療が終わったときがゴールではありません。
-            再発を減らし、患者さん自身が健康を守れるようになることを大切にしています。
+            原因を踏まえたうえで、患者さん一人ひとりの目的に合わせて必要な処置を行います。
           </p>
         </article>
 
         <article class="card">
           <div class="card-number">03</div>
-          <h3>スポーツを支える</h3>
+          <h3>日常生活の健康を維持する</h3>
           <p>
-            マウスガードの作製だけでなく、口腔機能やかみ合わせにも目を向け、
-            スポーツに取り組む方を歯科の立場からサポートします。
+            治療が終わったときがゴールではありません。
+            再発を減らし、患者さん自身が日常生活の中で健康を維持できることを大切にしています。
           </p>
         </article>
       </div>
@@ -685,15 +698,14 @@
     <div class="container message-grid">
       <div class="quote-box">
         <p>
-          「削る・詰める」で終わらず、<br>
-          なぜそうなったかを考える。
+          「削る・詰める」で終わらず、なぜそうなったかを考える。
         </p>
         <small>そして、同じことを繰り返さないための歯科医療へ。</small>
       </div>
 
       <div>
         <p class="section-kicker">Our Approach</p>
-        <h2 class="section-title">一人ひとりに必要なことを、順序立てて考えます</h2>
+        <h2 class="section-title approach-title">一人ひとりに必要なことを、順序立てて考えます</h2>
         <p class="section-text">
           お口の状態は、歯だけを見ても分からないことがあります。
           細菌のコントロール、かみ合わせや力の問題、口腔機能、生活習慣などを総合的に確認し、
@@ -785,6 +797,10 @@
         <article class="service">
           <h3>歯周病治療</h3>
           <p>歯周組織の状態を確認し、原因となる細菌や生活習慣への対応も行います。</p>
+        </article>
+        <article class="service">
+          <h3>欠損治療</h3>
+          <p>歯を失った部分に対して、お口全体の状態やかみ合わせを考えながら治療方法を検討します。</p>
         </article>
         <article class="service">
           <h3>予防・メインテナンス</h3>
